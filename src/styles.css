@@ -6,15 +6,15 @@
     --color-warning: orange;
     --color-success: greenyellow;
     --color-danger: crimson;
-    --color-shade-dark: rgba(0, 0, 0, 0.1);
-    --color-shade-light: rgba(255, 255, 255, 0.1);
+    --color-shade-dark: rgb(84, 97, 105);
+    --color-shade-light: rgba(156, 188, 155, 0.999);
 }
 
 html {
     background-color: var(--color-background);
     color: var(--color-text);
     font-family: monospace;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 input {
