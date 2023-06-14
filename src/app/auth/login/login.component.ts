@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ClienteService } from 'src/app/services/cliente/cliente.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class LoginComponent {
   email: string = "";
   password: string = "";
 
-  constructor(private clienteService:ClienteService){
+  constructor(private clienteService:ClienteService, private router: Router){
 
   }
 
@@ -20,6 +21,7 @@ validarLogin(){
   const usuario = this.clienteService.hacerLogin(this.email, this.password);
   if(usuario){
     console.log(usuario);
+    this.router.navigateByUrl("/pages/dashboard");
   } else {
     console.error("Credenciales incorrectas");
   }
