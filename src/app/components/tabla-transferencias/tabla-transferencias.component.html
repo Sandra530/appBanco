@@ -3,7 +3,9 @@
     <div>Importe</div>
     <div>Fecha</div>
 </div>
-<article class="fila-tabla" *ngFor="let transferencia of transferencias">
+<article [routerLink]="'/pages/transferencias/'+transferencia.id" 
+class="fila-tabla cursor-pointer" 
+*ngFor="let transferencia of transferencias">
     <div>{{ transferencia.concepto }}</div>
     <div>{{ transferencia.importe | currency:'EUR' }}</div>
     <div>{{ transferencia.fecha | date:'short' }}</div>

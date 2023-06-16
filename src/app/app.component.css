@@ -6,19 +6,28 @@
     display: flex;
     justify-content: space-around;
     padding: 8px;
-    margin: 25px;
+    text-decoration: none;
 }
 
 .active-menu{
     background-color: rgb(62, 104, 193);
+    text-decoration: none;
 }
+
+.dropdownmenu{
+    position: relative
+    }
 
 .dropdownmenu .submenu{
     display: none;
+    position:absolute
 
 }
 
 .dropdownmenu:hover .submenu{
     display: block;
-
+    background-color: rgb(172, 145, 145);
+    width: 150%;
+    padding: 10px, 12px;
+    justify-content: space-around;
 }

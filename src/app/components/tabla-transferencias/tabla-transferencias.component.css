@@ -11,3 +11,7 @@
     font-weight: bold;
     text-transform: uppercase;
 }
+
+.cursor-pointer{
+    cursor: pointer;
+}
