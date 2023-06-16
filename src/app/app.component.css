@@ -9,4 +9,16 @@
     margin: 25px;
 }
 
+.active-menu{
+    background-color: rgb(62, 104, 193);
+}
 
+.dropdownmenu .submenu{
+    display: none;
+
+}
+
+.dropdownmenu:hover .submenu{
+    display: block;
+
+}

@@ -1,17 +1,22 @@
 <!-- un comentario -->
 <nav class="main-menu bg-secondary">
   <ul>
-    <li><a routerLink="/auth/login">Iniciar sesión</a></li>
-    <li><a routerLink="/pages/dashboard">Inicio</a></li>
-    <li>
-      <a routerLink="/pages/transferencias-recibidas">
-        Transferencias recibidas
-      </a>
-    </li>
-    <li>
-      <a routerLink="/pages/transferencias-enviadas">
-        Transferencias enviadas
-      </a>
+    <li><a routerLinkActive="active-menu" routerLink="/auth/login">Iniciar sesión</a></li>
+    <li><a routerLinkActive="active-menu" routerLink="/pages/dashboard">Inicio</a></li>
+    <li class="dropdownmenu">
+      Transferencias
+      <ul class="submenu">
+        <li>
+          <a routerLinkActive="active-menu" routerLink="/pages/transferencias-recibidas">
+            Transferencias recibidas
+          </a>
+        </li>
+        <li>
+          <a routerLinkActive="active-menu" routerLink="/pages/transferencias-enviadas">
+            Transferencias enviadas
+          </a>
+        </li>
+      </ul>
     </li>
   </ul>
 </nav>
