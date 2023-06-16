@@ -3,6 +3,10 @@
     gap: 16px;
     list-style: none;
     padding-left: 0;
-    color: purple;
- 
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    margin: 25px;
 }
+
+
