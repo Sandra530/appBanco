@@ -1,8 +1,19 @@
-<h1>App Banco</h1>
+<!-- un comentario -->
 <nav class="main-menu">
   <ul>
-    <li><a routerLink="/auth/login">Iniciar sesión</a></li>
+    <li><a routerLink="/auth/login">Inciar sesión</a></li>
     <li><a routerLink="/pages/dashboard">Inicio</a></li>
+    <li>
+      <a routerLink="/pages/transferencias-recibidas">
+        Transferencias recibidas
+      </a>
+    </li>
+    <li>
+      <a routerLink="/pages/transferencias-enviadas">
+        Transferencias enviadas
+      </a>
+    </li>
   </ul>
 </nav>
-<router-outlet></router-outlet> 
+<!-- aquí se recarga el contenido al cambiar de ruta -->
+<router-outlet></router-outlet>
