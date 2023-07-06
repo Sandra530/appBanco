@@ -1,5 +1,11 @@
-<p>Transferencia de ORDENANTE</p>
-<p>Para BENEFICIARIO</p>
-<p>Importe: xxx€</p>
-<p>Concepto: CONCEPTO</p>
-<p>Fecha: xx/xx/xxxx</p>
+<div *ngIf="transferencia">
+
+<p>Transferencia de {{transferencia.ordenante.usuario}}</p>
+<p>Para {{transferencia.beneficiario.usuario}}</p>
+<p>Importe: {{transferencia.importe | currency: 'EUR'}}</p>
+<p>Realizada en {{transferencia.fecha | date: 'short'}}</p>
+
+
+
+</div>
+

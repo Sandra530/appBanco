@@ -1,0 +1,11 @@
+<section>
+    <input [(ngModel)]="nuevatransferencia.beneficiario.id" placeholder="ID Beneficiario" type="number">
+    <input [(ngModel)]="nuevatransferencia.importe" placeholder="Importe" type = "number">
+    <input [(ngModel)]="nuevatransferencia.concepto" placeholder="Concepto" type = "text>
+    <button (click)="enviarTransferencia()" class="btn btn-primary"> Confirmar envío</button>
+    <p>{{ feedback }}</p>
+
+
+
+
+</section>

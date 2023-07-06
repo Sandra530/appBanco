@@ -1,0 +1,50 @@
+.form-nuevatransferencia{
+
+    width: 80%;
+    height: 700px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    box-shadow: 7px 13px 37px #000;
+    border-top: 4px solid #7f66e3 ;
+
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+
+.controls-newTransfer{
+
+    width: 100%; 
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+.controls-dashboard{
+    width: 30%; 
+    margin-left: 420px;
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #000000;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: #75bb6c;
+}
+a:hover{
+    color: rgb(44, 97, 123);
+}
