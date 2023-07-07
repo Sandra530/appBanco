@@ -2,6 +2,7 @@
 <nav class="main-menu bg-secondary">
   <ul>
     <li><a routerLinkActive="active-menu" routerLink="/auth/login">Iniciar sesión</a></li>
+    <li><a routerLinkActive="active-menu" routerLink="/pages/mi-cuenta">Mi cuenta</a></li>
     <li><a routerLinkActive="active-menu" routerLink="/pages/dashboard">Inicio</a></li>
     <li class="dropdownmenu">
       Transferencias
@@ -16,6 +17,13 @@
             Transferencias enviadas
           </a>
         </li>
+        <li>
+          <a routerLinkActive="active-menu" routerLink="/pages/nueva-transferencia">
+            Nueva transferencia
+          </a>
+
+        </li>
+        
       </ul>
     </li>
   </ul>
@@ -23,5 +31,5 @@
 <!-- aquí se recarga el contenido al cambiar de ruta -->
 <router-outlet></router-outlet>
 <footer class="footer">
-  <p>Esto es un pie de página</p>
+  
 </footer>

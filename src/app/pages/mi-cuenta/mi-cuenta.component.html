@@ -1,0 +1,10 @@
+<div *ngIf="clienteLogeado">
+    <p>Usuario: {{clienteLogeado.usuario}}</p>
+    <p>Correo: {{clienteLogeado.correo}}</p>
+    <p>Contraseña: {{clienteLogeado.password}}</p>
+    <p>Saldo: {{clienteLogeado.saldo}}</p>
+
+</div>
+
+<button (click)="cerrarSesion()" class="btn btn-primary">Cerrar Sesión</button>
+
