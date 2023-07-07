@@ -16,7 +16,7 @@ export class TransferenciaService {
   }
 
   obtenerTransferenciasPorOrdenanteId(id: number) {
-    return this.http.get(`${this.urlApi}/cliente/${id}`)
+    return this.http.get(`${this.urlApi}/ordenante/${id}`)
   }
 
   obtenerTransferenciasPorBeneficiarioId(id: number) {
