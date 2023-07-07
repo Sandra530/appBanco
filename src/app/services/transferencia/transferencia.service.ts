@@ -27,9 +27,10 @@ export class TransferenciaService {
     return this.http.post(this.urlApi, transferencia);
 
 }
-obtenerTransferenciaporId(id: number) {
+obtenerTransferenciaPorId(id: number) {
     const url = `${this.urlApi}/${id}`;
-    this.http.get(this.urlApi+"/"+id)
+    return this.http.get(this.urlApi+"/"+id)
+
 
 }
 

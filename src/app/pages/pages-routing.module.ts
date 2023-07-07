@@ -4,20 +4,25 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TransferenciasRecibidasComponent } from './transferencias-recibidas/transferencias-recibidas.component';
 import { TransferenciasEnviadasComponent } from './transferencias-enviadas/transferencias-enviadas.component';
 import { DetalleTransferenciaComponent } from './detalle-transferencia/detalle-transferencia.component';
+import { loginGuard } from '../guards/login.guard';
 
 const routes: Routes = [
-  { path: 'dashboard', component: DashboardComponent
+  { path: 'dashboard', component: DashboardComponent, canActivate: [loginGuard] },
+
 
   
-  { path: 'transferencias-recibidas', component: TransferenciasRecibidasComponent
-  
-},
-
-{ path: 'transferencias-enviadas', component: TransferenciasEnviadasComponent
+  { path: 'transferencias-recibidas', component: TransferenciasRecibidasComponent,
+  canActivate: [loginGuard]
   
 },
 
-{ path: 'transferencias/:id', component: DetalleTransferenciaComponent
+{ path: 'transferencias-enviadas', component: TransferenciasEnviadasComponent,
+canActivate: [loginGuard]
+  
+},
+
+{ path: 'transferencias/:id', component: DetalleTransferenciaComponent,
+canActivate: [loginGuard]
   
 },
 
