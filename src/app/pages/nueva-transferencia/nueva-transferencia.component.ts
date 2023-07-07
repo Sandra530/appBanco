@@ -55,7 +55,6 @@ enviarTransferencia(){
         console.log({transferenciaGuardada});
         this.feedback = "Transferencia enviada";
     });
-    
 }
 (error)=>{
     console.log(error);

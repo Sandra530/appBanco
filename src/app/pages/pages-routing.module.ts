@@ -8,7 +8,6 @@ import { DetalleTransferenciaComponent } from './detalle-transferencia/detalle-t
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent
 
-},
   
   { path: 'transferencias-recibidas', component: TransferenciasRecibidasComponent
   
